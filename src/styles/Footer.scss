@@ -1,0 +1,172 @@
+.contactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pContact {
+        margin-bottom: 50px;
+        font-size: 40px;
+        color: #3E3E3E;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .firstContainer {
+        margin: 20px;
+
+        .contactConteiner {
+            .element {
+                font-size: 20px;
+                font-weight: 400;
+                color: #3E3E3E;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+
+                &:nth-child(1) {
+                    font-weight: 600;
+                    margin-bottom: 35px;
+
+                }
+
+                &:nth-child(3) {
+                    font-weight: 600;
+                }
+
+                &:nth-child(5) {
+                    font-weight: 600;
+                    margin-bottom: 50px;
+                }
+            }
+
+        }
+    }
+
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 320px;
+        margin-bottom: 20px;
+
+        .inputField {
+            width: 290px;
+            border: none;
+            background-color: #F8F8FA;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #3E3E3E;
+
+            &::placeholder {
+                font-family: 'Times New Roman', Times, serif;
+                color: #7E7E83;
+            }
+        }
+
+        .nameField,
+        .emailField {
+            height: 48px;
+        }
+
+        .messageField {
+            height: 144px;
+            resize: none;
+        }
+
+        .submitButton {
+            font-family: 'Times New Roman', Times, serif;
+            width: 290px;
+            height: 48px;
+            background-color: #d12d35;
+            color: white;
+            border: none;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #a92027;
+            }
+        }
+    }
+
+    .footerImg {
+        background-image: url('../../public/images/footer.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 23vh;
+        margin-top: 60px;
+    }
+}
+
+@media screen and (min-width: 520px) and (max-width: 744px) {
+    .contactUs {
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            margin: 0 40px 0 40px;
+        }
+
+        .firstContainer {
+            margin: 0 70px 0 0;
+        }
+
+        .footerImg {
+            background-image: url('../../public/images/footer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 53vh;
+            margin-top: 60px;
+        }
+    }
+}
+
+@media screen and (min-width: 744px) and (max-width: 1980px) {
+    .contactUs {
+        margin: 90px auto 0;
+        max-width: 1260px;
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            margin: 0 40px 0 40px;
+        }
+
+        .firstContainer {
+            margin: 0 70px 0 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .contactConteiner {
+            margin-right: 30px;
+        }
+
+        .footerImg {
+            background-image: url('../../public/images/footer.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 53vh;
+            margin-top: 60px;
+        }
+    }
+}

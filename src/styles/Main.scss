@@ -1,0 +1,427 @@
+.museumHours {
+    padding: 90px 20px 0;
+
+    .hoursContainer {
+
+        .topText {
+            font-size: 18px;
+            color: #d12d35;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .h1Hours {
+            font-size: 40px;
+            color: #3E3E3E;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+    }
+
+    .calendar {
+        display: flex;
+        flex-direction: column;
+
+        .fifthAvenue {
+            font-size: 32px;
+            color: #3E3E3E;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 40px;
+        }
+
+        .firsrCalendar,
+        .secondCalendar {
+            display: flex;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 10px;
+
+            .firstData,
+            .secondData {
+                margin-bottom: 20px;
+                margin-right: 30px;
+
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        font-size: 26px;
+                        color: #3E3E3E;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        margin-top: 10px;
+                    }
+                }
+            }
+
+            .closed,
+            .days {
+                font-size: 18px;
+                color: #333333;
+                text-align: center;
+            }
+        }
+
+        .closed {
+            font-size: 26px;
+            color: #3E3E3E;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        .days {
+            font-size: 26px;
+            color: #3E3E3E;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+    }
+}
+
+.nowOnView {
+
+    .mainText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .firstText {
+            font-size: 40px;
+            color: #3E3E3E;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 115px;
+        }
+
+        .secondText {
+            font-size: 20px;
+            color: #3E3E3E;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-top: 10px;
+            text-align: center;
+        }
+    }
+
+    .firstGallary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+        .imgContainer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .imgGallary {
+                width: 135px;
+                height: auto;
+                object-fit: cover;
+            }
+
+            .imgGallary2 {
+                width: 84px;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+
+        .underImg {
+            margin-top: 20px;
+            text-align: center;
+
+            .under {
+                font-size: 20px;
+                color: #333;
+                font-weight: 400;
+                text-transform: uppercase;
+                margin: 5px 0;
+
+                &:first-child {
+                    color: #D12D35;
+                }
+            }
+        }
+
+        .buttonGallary {
+            width: 290px;
+            height: 56px;
+
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            color: white;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-top: 10px;
+            cursor: pointer;
+
+            background-color: #D12D35;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+
+            &:hover {
+                background-color: #AE1C23;
+            }
+        }
+    }
+}
+
+
+.moreToExploreOnline {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    .mainHead {
+        font-size: 25px;
+        color: #3E3E3E;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .singlImg {
+        width: 290px;
+
+        height: auto;
+        object-fit: cover;
+    }
+
+    .underImg {
+        margin-top: 20px;
+        text-align: center;
+
+        .under {
+            font-size: 18px;
+            font-weight: 400;
+            color: #3E3E3E;
+            text-transform: uppercase;
+            margin: 5px 0;
+
+            &:first-child {
+                color: #D12D35;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 602px) and (max-width: 744px) {
+    .museumHours {
+        display: flex;
+
+        .calendar {
+            .fifthAvenue {
+                font-size: 22px;
+            }
+
+            .firsrCalendar,
+            .secondCalendar {
+
+                .firstData,
+                .secondData {
+                    ul {
+                        li {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hoursContainer {
+            margin: 45px 30px 45px 30px;
+        }
+    }
+
+    .nowOnView {
+
+        .firstGallary {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+
+        .imgContainer {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+
+            .imgGallary {
+                width: 100%;
+                max-height: 187px;
+                object-fit: cover;
+            }
+
+            .imgGallary2 {
+                width: 100%;
+                max-height: 288px;
+                object-fit: cover;
+
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+
+        .underImg {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            text-align: start;
+            width: 600px;
+
+        }
+
+        .buttonGallary {
+            width: 392px;
+        }
+    }
+}
+
+.moreToExploreOnline {
+
+    .mainHead {
+        margin: 50px auto;
+        font-size: 25px;
+    }
+
+    .singlImg {
+        width: 392px;
+        margin-top: 20px;
+    }
+
+    .underImg {
+        width: 392px;
+        margin: 0 auto;
+
+        .under {
+            font-size: 18px;
+
+
+            &:first-child {
+                color: #D12D35;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 744px) and (max-width: 1980px) {
+    .museumHours {
+        display: flex;
+
+        .calendar {
+            .fifthAvenue {
+                font-size: 22px;
+            }
+
+            .firsrCalendar,
+            .secondCalendar {
+
+                .firstData,
+                .secondData {
+                    ul {
+                        li {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .hoursContainer {
+            margin: 45px 30px 45px 30px;
+        }
+    }
+
+    .nowOnView {
+        display: flex;
+        flex-direction: column;
+
+        .firstGallary {
+            .imgContainer {
+                .imgGallary {
+                    width: 100%;
+                    max-height: 220px;
+                    object-fit: cover;
+                }
+
+                .imgGallary2 {
+                    width: 100%;
+                    max-height: 220px;
+                    object-fit: cover;
+                }
+            }
+
+            .underImg {
+                display: flex;
+                flex-direction: column;
+                text-align: start;
+                width: 600px;
+                margin-left: -105px;
+            }
+
+            .buttonGallary {
+                width: 392px;
+                margin-top: 40px;
+            }
+        }
+    }
+
+    .moreToExploreOnline {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper2 {
+            margin-right: 10px;
+        }
+
+        .mainHead {
+            margin: 50px auto;
+            font-size: 65px;
+            width: 620px;
+        }
+
+        .singlImg {
+            width: 392px;
+            margin-top: 20px;
+        }
+
+        .underImg {
+            display: flex;
+            flex-direction: column;
+
+            .under {
+                font-size: 18px;
+
+                &:first-child {
+                    color: #D12D35;
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
